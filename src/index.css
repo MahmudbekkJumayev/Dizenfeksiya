@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+input {
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  font-size: 17px;
+  padding: 6px 12px;
+
+  border-radius: 8px;
+  width: 408px;
+  height: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  font-size: 17px;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+}

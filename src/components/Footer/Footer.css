@@ -1,0 +1,165 @@
+.container3 {
+  margin: 100px 80px;
+}
+.connection {
+  border-radius: 12px;
+  width: 100%;
+  height: 448px;
+  background: radial-gradient(
+    333.17% 80.94% at 51.32% 69.21%,
+    rgb(61, 160, 252) 0%,
+    rgb(2, 227, 214) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form > input {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 408px;
+  height: 48px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.forma > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: #242825;
+  margin: auto;
+}
+
+.forma {
+  background: #fff;
+  border-radius: 8px;
+  width: 456px;
+  height: 384px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.forma-btn {
+  background: #242825;
+  border-radius: 8px;
+  width: 408px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.forma-btn:hover {
+  background: #191b19;
+}
+
+.connect-text > p {
+  width: 300px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fafafa;
+
+  margin-top: 20px;
+}
+
+.connect-img {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.footer-logo {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #020c31;
+  width: 195px;
+  height: 24px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location > span {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.social-media > button {
+  border-radius: 30px;
+  padding: 10px;
+  width: 308px;
+  height: 48px;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.social-media > button:hover {
+  background: #ebe5e5;
+}
+
+@media (max-width: 1300px) {
+  .forma {
+    width: 356px;
+    height: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forma-btn {
+    width: 308px;
+    height: 48px;
+  }
+
+  .forma > h2 {
+    font-size: 25px;
+  }
+
+  .connect-text {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .footer-contact {
+    margin-top: 20px;
+  }
+
+  .container3 {
+    margin: 50px 40px;
+  }
+}

@@ -1,0 +1,270 @@
+.container2 {
+  margin: 100px 80px;
+}
+
+.cart-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: #020c31;
+}
+
+.line {
+  margin-top: 24px;
+  width: 100%;
+  height: 1.2px;
+  background-color: #020c31;
+}
+
+.card-item {
+  width: 304px;
+  height: 188px;
+  padding: 10px;
+}
+
+.card {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-item > h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  text-transform: capitalize;
+  color: #020c31;
+  margin-top: 10px;
+}
+
+.card-item > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #676d83;
+  margin-top: 10px;
+}
+
+.dizenfeksiya-card {
+  position: relative;
+  margin-top: 100px;
+}
+
+.dizenfeksiya-card-item > h4 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fafafa;
+}
+
+.dizenfeksiya-card-item > p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.dizenfeksiya-card-item {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 600px;
+}
+
+.dizen-btn {
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 190px;
+  height: 36px;
+  background: #3360ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* servise */
+.servise {
+  margin-top: 100px;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.servise > h4 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 123%;
+  text-transform: capitalize;
+  color: #020c31;
+}
+
+.servise > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #666;
+}
+
+.service-card-item {
+  background: #f3f6f6;
+  border-radius: 12px;
+  width: 443px;
+  height: 500px;
+}
+
+.service-card-item > h4 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #020c31;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.service-card-item > p {
+  width: 154px;
+  height: 47px;
+  color: #3360ff;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.service-card-item > img {
+  border-radius: 10px;
+  margin-top: 180px;
+  margin-left: 290px;
+}
+
+/* secruty */
+
+.secruty {
+  background: radial-gradient(
+    498.32% 130.33% at 92.87% 11.25%,
+    rgb(51, 169, 255) 0%,
+    rgb(51, 255, 243) 100%
+  );
+  height: 574px;
+  margin-top: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.secruty-img > img {
+  border-radius: 26px;
+}
+
+.secruty-text > h4 {
+  width: 500px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #fafafa;
+}
+
+.secruty-btn {
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 190px;
+  height: 36px;
+  background: #3360ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comment {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-faq {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #020c31;
+  margin-bottom: 40px;
+}
+
+.acardion-item {
+  width: 600px;
+  margin-top: 60px;
+}
+
+.acardion-item > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acardion-item > span > h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #676d83;
+}
+
+@media (max-width: 1300px) {
+  .dizenfeksiya-card > img {
+    width: 1200px;
+  }
+
+  .service-card-item {
+    width: 380px;
+    height: 400px;
+  }
+
+  .service-card-item > img {
+    border-radius: 10px;
+    margin-top: 110px;
+    margin-left: 240px;
+  }
+
+  .container2 {
+    margin: 50px 40px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .dizenfeksiya-card > img {
+    width: 100%;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    font-size: 30px;
+  }
+
+  .secruty-img > img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .comment-faq {
+    display: none;
+  }
+
+  .acardion-item {
+    margin-left: 100px;
+    width: 800px;
+    margin-top: 60px;
+  }
+}
