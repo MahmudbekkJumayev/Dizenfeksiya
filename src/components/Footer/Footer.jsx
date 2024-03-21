@@ -45,9 +45,9 @@ const Footer = () => {
           </div>
           <div className="phone"></div>
           <div className="social-media">
-            <button>Fecebook</button>
-            <button>Instagram</button>
-            <button>Telegram</button>
+            <button className="fecebook">Fecebook</button>
+            <button className="instagram">Instagram</button>
+            <button className="telegram">Telegram</button>
           </div>
         </div>
       </div>

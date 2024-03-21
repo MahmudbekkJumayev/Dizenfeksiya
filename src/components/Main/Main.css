@@ -17,8 +17,8 @@
 }
 
 .card-item {
-  width: 304px;
-  height: 188px;
+  width: 344px;
+  height: 200px;
   padding: 10px;
 }
 
@@ -30,8 +30,9 @@
 }
 
 .card-item > h4 {
+  margin-top: 10px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 133%;
   text-transform: capitalize;
   color: #020c31;
@@ -39,8 +40,9 @@
 }
 
 .card-item > p {
+  margin-top: 10px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   color: #676d83;
   margin-top: 10px;
@@ -54,7 +56,8 @@
 .dizenfeksiya-card-item > h4 {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 40px;
+  font-size: 42px;
+  width: 600px;
   line-height: 120%;
   color: #fafafa;
 }
@@ -62,7 +65,8 @@
 .dizenfeksiya-card-item > p {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 16px;
+  margin-top: 15px;
+  font-size: 18px;
   line-height: 150%;
   color: #fff;
 }
@@ -78,7 +82,7 @@
   margin-top: 15px;
   border-radius: 20px;
   width: 190px;
-  height: 36px;
+  height: 40px;
   background: #3360ff;
   font-weight: 500;
   font-size: 16px;
@@ -86,6 +90,12 @@
   text-transform: capitalize;
   color: #fff;
   cursor: pointer;
+}
+
+.dizen-btn:hover {
+  background: #fff;
+  color: #3360ff;
+  border: 2px solid #3360ff;
 }
 
 /* servise */
@@ -133,17 +143,16 @@
 }
 
 .service-card-item > p {
-  width: 154px;
-  height: 47px;
+  width: 300px;
   color: #3360ff;
+  font-size: 18px;
   margin-left: 40px;
   margin-top: 20px;
-  width: 100px;
 }
 
 .service-card-item > img {
   border-radius: 10px;
-  margin-top: 180px;
+  margin-top: 100px;
   margin-left: 290px;
 }
 
@@ -170,7 +179,7 @@
 .secruty-text > h4 {
   width: 500px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 42px;
   line-height: 150%;
   color: #fafafa;
 }
@@ -179,7 +188,7 @@
   margin-top: 15px;
   border-radius: 20px;
   width: 190px;
-  height: 36px;
+  height: 40px;
   background: #3360ff;
   font-weight: 500;
   font-size: 16px;
@@ -187,6 +196,13 @@
   text-transform: capitalize;
   color: #fff;
   cursor: pointer;
+  transition: 0.3ms;
+}
+
+.secruty-btn:hover {
+  background: #fff;
+  color: #3360ff;
+  border: 2px solid #3360ff;
 }
 
 .comment {
@@ -204,8 +220,24 @@
   margin-bottom: 40px;
 }
 
+.acardion-item img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.acardion-item img.rotate {
+  transform: rotate(180deg);
+}
+
+.acardion-item img:hover {
+  filter: brightness(70%);
+}
+
+.acardion {
+  height: 500px;
+}
+
 .acardion-item {
-  width: 600px;
+  width: 1000px;
   margin-top: 60px;
 }
 
@@ -215,16 +247,26 @@
   justify-content: space-between;
 }
 
+.acardion-text {
+  font-size: 18px;
+}
+
 .acardion-item > span > h4 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 133%;
   color: #676d83;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1300) {
   .dizenfeksiya-card > img {
-    width: 1200px;
+    width: 1180px;
+  }
+}
+
+@media (max-width: 1201px) {
+  .dizenfeksiya-card > img {
+    width: 1120px;
   }
 
   .service-card-item {
@@ -234,7 +276,7 @@
 
   .service-card-item > img {
     border-radius: 10px;
-    margin-top: 110px;
+    margin-top: 20px;
     margin-left: 240px;
   }
 
@@ -266,5 +308,97 @@
     margin-left: 100px;
     width: 800px;
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 835px) {
+  .dizenfeksiya-card-item {
+    top: 50px;
+  }
+
+  .service-card {
+    display: grid;
+    flex-wrap: wrap;
+  }
+  .service-card-item {
+    margin-top: 20px;
+  }
+
+  .secruty-img {
+    display: none;
+  }
+
+  .acardion-item {
+    margin-left: 100px;
+    width: 600px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .dizenfeksiya-card {
+    width: 740px;
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  .dizenfeksiya-card > img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    width: 250px;
+    font-size: 26px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .dizenfeksiya-card-item > p {
+    font-size: 18px;
+    width: 250px;
+  }
+
+  .service-card-item {
+    background: #f3f6f6;
+    border-radius: 12px;
+    width: 303px;
+    height: 500px;
+  }
+
+  .service-card-item > p {
+    width: 200px;
+  }
+
+  .service-card-item > img {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 190px;
+  }
+
+  .secruty-text > h4 {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .secruty {
+    height: 500px;
+  }
+
+  .acardion-item {
+    width: 250px;
+    margin: 0;
+  }
+
+  .acardion-item > span > h4 {
+    margin-top: 20px;
+    font-size: 30px;
   }
 }

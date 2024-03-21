@@ -3,12 +3,19 @@
   font-size: 64px;
   line-height: 112%;
   color: #3375ff;
-  width: 600px;
+  width: 400px;
 }
+/* 
+.header-container {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+} */
 
 .head-text-1 {
   font-weight: 400;
-  font-size: 16px;
+  margin-top: 30px;
+  font-size: 19px;
   line-height: 150%;
   color: #676d83;
   width: 400px;
@@ -18,7 +25,7 @@
   margin-top: 15px;
   border-radius: 20px;
   width: 190px;
-  height: 36px;
+  height: 40px;
   background: #3360ff;
   font-weight: 500;
   font-size: 16px;
@@ -26,78 +33,68 @@
   text-transform: capitalize;
   color: #fff;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .head-btn:hover {
-  background: #264edf;
+  background: #fff;
+  color: #3360ff;
+  border: 2px solid #3360ff;
 }
 
 .row {
-  margin-top: 20px;
+  margin: 80px 0px;
+  gap: 40px;
+  width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .head-img {
   border-radius: 16px;
   width: 674px;
   height: 540px;
-  margin-left: 100px;
 }
 
-@media (max-width: 1300px) {
-  .head-text {
-    font-size: 25px;
-  }
-
-  .head-text-1 {
-    width: 300px;
-  }
+@media (max-width: 1201px) {
   .head-img {
-    width: 450px;
-    height: 400px;
-  }
-}
-
-@media (max-width: 1099px) {
-  .row {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-  }
-
-  .head-img {
-    border-radius: 16px;
-    width: 400px;
-    height: 400px;
+    width: 574px;
+    height: 510px;
     object-fit: cover;
-    margin: 0px;
   }
 }
 
-@media (max-width: 767px) {
-  .row {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+@media (max-width: 835px) {
   .head-img {
     display: none;
   }
 
   .head-text {
-    font-size: 35px;
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 70px;
   }
 
   .head-text-1 {
-    margin-left: 100px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head-text {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 35px;
   }
 
-  .head-btn {
-    margin-left: 100px;
+  .head-text-1 {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .row {
+    margin-left: 20px;
   }
 }
