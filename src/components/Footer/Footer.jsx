@@ -1,19 +1,62 @@
-import React from "react";
-import "./Footer.css";
+import React, { useState } from "react";
+import axios from "axios";
 import contact from "../../assets/contact.png";
 import phone from "../../assets/phone1.png";
 import location from "../../assets/location1.png";
+import "./Footer.css";
 
 const Footer = () => {
+  const [formData, setFormData] = useState({ name: "", phone: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(
+        "https://api.telegram.org/bot7134895187:AAGXztQoWmiNoOOUlBoct2D4QuMbTkPhnjc/sendMessage",
+        {
+          chat_id: "-1002122412259",
+          text: `Ism: ${formData.name}\nTelefon: ${formData.phone}`,
+        }
+      );
+      // Reset the formData state to empty values
+      setFormData({ name: "", phone: "" });
+      alert("Ma'lumotlar muvaffaqiyatli yuborildi!");
+    } catch (error) {
+      console.error(error);
+      alert("Xatolik yuz berdi. Qaytadan urinib ko'ring.");
+    }
+  };
+
   return (
     <div id="faq" className="container3">
       <div className="connection">
         <div className="forma" data-aos="fade-right">
           <h2>Malumotingizni Qoldiring</h2>
-          <form className="form">
-            <input type="text" placeholder="Ism" />
-            <input type="phone" placeholder="+998" />
-            <button className="forma-btn">Yuborish</button>
+          <form className="form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              placeholder="Ism"
+              onChange={handleChange}
+            />
+            <input
+              type="phone"
+              name="phone"
+              value={formData.phone}
+              placeholder="+998"
+              onChange={handleChange}
+            />
+            <button type="submit" className="forma-btn">
+              Yuborish
+            </button>
           </form>
         </div>
         <div className="connect-img">

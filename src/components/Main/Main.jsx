@@ -29,85 +29,60 @@ const Main = () => {
   return (
     <div id="about" className="container2">
       <h3 className="cart-text" data-aos="fade-up">
-        Avfzalliklarimiz
+        {t("our")}
       </h3>
       <span className="line"></span>
       <div className="card">
         <div className="card-item" data-aos="fade-right">
           <img src={mask} alt="#" />
-          <h4>Tezkor Xizmat Ko'rsatish</h4>
-          <p>
-            Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan
-            kompaniyamiz Mijozlarimiz bizdan mamnun
-          </p>
+          <h4>{t("ourT1")}</h4>
+          <p>{t("ourT4")}</p>
         </div>
         <div className="card-item" data-aos="fade-right">
           <img src={mask1} alt="#" />
-          <h4>Yetuk mutahasislaimiz</h4>
-          <p>
-            Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan
-            kompaniyamiz Mijozlarimiz bizdan mamnun
-          </p>
+          <h4>{t("ourT2")}</h4>
+          <p>{t("ourT4")}</p>
         </div>
         <div className="card-item" data-aos="fade-right">
           <img src={mask2} alt="#" />
-          <h4>Sizga maqul vaqtda</h4>
-          <p>
-            Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan
-            kompaniyamiz Mijozlarimiz bizdan mamnun
-          </p>
+          <h4>{t("ourT3")}</h4>
+          <p>{t("ourT4")}</p>
         </div>
       </div>
       {/* mein qismi */}
       <div className="dizenfeksiya-card">
         <img src={dizen} alt="#" />
         <div className="dizenfeksiya-card-item" data-aos="fade-left">
-          <h4>Klapa va zararli hashorot endi yo’q deb hisoblang !!!</h4>
-          <p>
-            Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan
-            kompaniyamiz Mijozlarimiz bizdan mamnun
-          </p>
-          <button className="dizen-btn">{t("connection")}</button>
+          <h4>{t("klapa")}</h4>
+          <p>{t("ourT4")}</p>
+          <button
+            onClick={() => (window.location.href = "#faq")}
+            className="dizen-btn"
+          >
+            {t("connection")}
+          </button>
         </div>
       </div>
       {/* servises */}
       <div id="servis" className="servise" data-aos="fade-up-right">
         <h4>Service</h4>
-        <p>Bu darsliklari sizning yuqori daraja olishingizga yordam beradi</p>
+        <p>{t("lesson")}</p>
         <div className="service-card">
           <div className="service-card-item">
-            <h4>Boshlang’ich tushunchalar</h4>
-            <p>
-              Dezinfektsiya - yuqumli kasalliklar qo'zg'atuvchilarini yo'q
-              qilish va ularning teriga, shilliq pardalarga va yara yuzasiga
-              tushishini oldini olish uchun atrof-muhit ob'ektlarida toksinlarni
-              yo'q qilishga qaratilgan chora-tadbirlar majmui. Bu dezinfeksiya
-              turlaridan biridir.
-            </p>
+            <h4>{t("basic")}</h4>
+            <p>{t("basicT")}</p>
 
             <img src={group} alt="#" />
           </div>
           <div className="service-card-item">
-            <h4>Boshlang’ich tushunchalar</h4>
-            <p>
-              Dezinfektsiya - yuqumli kasalliklar qo'zg'atuvchilarini yo'q
-              qilish va ularning teriga, shilliq pardalarga va yara yuzasiga
-              tushishini oldini olish uchun atrof-muhit ob'ektlarida toksinlarni
-              yo'q qilishga qaratilgan chora-tadbirlar majmui. Bu dezinfeksiya
-              turlaridan biridir.
-            </p>
+            <h4> {t("basic")}</h4>
+            <p>{t("basicT")}</p>
 
             <img src={slack2} alt="#" />
           </div>
           <div className="service-card-item">
-            <h4>Boshlang’ich tushunchalar</h4>
-            <p>
-              Dezinfektsiya - yuqumli kasalliklar qo'zg'atuvchilarini yo'q
-              qilish va ularning teriga, shilliq pardalarga va yara yuzasiga
-              tushishini oldini olish uchun atrof-muhit ob'ektlarida toksinlarni
-              yo'q qilishga qaratilgan chora-tadbirlar majmui. Bu dezinfeksiya
-              turlaridan biridir.
-            </p>
+            <h4> {t("basic")}</h4>
+            <p>{t("basicT")}</p>
 
             <img src={slack3} alt="#" />
           </div>
@@ -120,11 +95,13 @@ const Main = () => {
         </div>
         <div className="secruty-text" data-aos="fade-up-left">
           <img src={dicons} alt="#" />
-          <h4>
-            Bizga ko'p yillardan beri kompaniyamizga ishonch bildirganlar
-            talaygina
-          </h4>
-          <button className="secruty-btn">{t("connection")}</button>
+          <h4>{t("trust")}</h4>
+          <button
+            onClick={() => (window.location.href = "#faq")}
+            className="secruty-btn"
+          >
+            {t("connection")}
+          </button>
         </div>
       </div>
       {/* comment */}
@@ -136,7 +113,7 @@ const Main = () => {
           {[0, 1, 2].map((index) => (
             <div className="acardion-item" key={index}>
               <span onClick={() => toggleAccordion(index)}>
-                <h4>Kursdan nima topaman</h4>
+                <h4>{t("acardion")}</h4>
                 <img
                   src={frame}
                   alt="#"
@@ -144,13 +121,7 @@ const Main = () => {
                 />
               </span>
               {openAccordionIndex === index && (
-                <span className="acardion-text">
-                  Arzon narxlar kafolati bilan Toshkentda dezinfeksiya
-                  +977572010 raqamiga qo'ng'iroq qiling. Dezinseksiya -
-                  odamlarga yaqinligi istalmagan har qanday hasharotlarni yo'q
-                  qilish tartibi. Toshkentda dezinfeksiya. hasharotlar va
-                  tarakanlardan.
-                </span>
+                <span className="acardion-text">{t("acardionT")}</span>
               )}
             </div>
           ))}

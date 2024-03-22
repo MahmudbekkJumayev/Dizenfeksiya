@@ -11,12 +11,14 @@ const Header = () => {
       <Container>
         <Row className="header-container">
           <Col data-aos="fade-right">
-            <h2 className="head-text">Dezinfeksiya Hizmati</h2>
-            <p className="head-text-1">
-              Bizning ko’p yillardan beri o’z faoliyatini olib kelayotgan
-              kompaniyamiz Mijozlarimiz bizdan mamnun
-            </p>
-            <Button className="head-btn">{t("connection")}</Button>
+            <h2 className="head-text">{t("dizen")}</h2>
+            <p className="head-text-1">{t("head")}</p>
+            <Button
+              onClick={() => (window.location.href = "#faq")}
+              className="head-btn"
+            >
+              {t("connection")}
+            </Button>
           </Col>
           <Col>
             <img className="head-img" src={imgHead} alt="imp" />

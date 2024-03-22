@@ -39,11 +39,11 @@
 }
 
 .link {
-  color: #3360ff;
+  color: #000;
 }
 
 .link:hover {
-  color: #000;
+  color: #3360ff;
 }
 
 .navigation {
@@ -98,26 +98,6 @@
   margin: 4px;
   transition: all 0.3s ease-in-out;
 }
-/* 
-.container7 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 1000; /* Yuqori ustunlik */
-/* Pastki va yon tomondan uzaytirish */
-
-/* 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* @media (max-width: 768px) {
-  .navigation {
-    /* padding: 20px 0; /* Kichik ekranga moslashtirish */
 
 @media (max-width: 1000px) {
   .burger-menu {

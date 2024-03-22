@@ -47,7 +47,12 @@ const Navbar = ({ changeLang }) => {
             <option value="en">English</option>
             <option value="uz">Uzbek</option>
           </select>
-          <button className="nav-btn">{t("connection")}</button>
+          <button
+            className="nav-btn"
+            onClick={() => (window.location.href = "#faq")}
+          >
+            {t("connection")}
+          </button>
         </div>
         <div className="burger-menu" onClick={toggleMenu}>
           <div className={`line ${showMenu ? "active" : ""}`}></div>
