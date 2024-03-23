@@ -35,7 +35,7 @@ const Footer = () => {
   };
 
   return (
-    <div id="faq" className="container3">
+    <div id="faq">
       <div className="connection">
         <div className="forma" data-aos="fade-right">
           <h2>Malumotingizni Qoldiring</h2>

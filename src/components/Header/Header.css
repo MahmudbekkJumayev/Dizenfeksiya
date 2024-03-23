@@ -47,11 +47,11 @@
 }
 
 .row {
-  margin-top: 80px;
+  margin-top: 90px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .head-img {
@@ -61,6 +61,13 @@
 }
 
 @media (max-width: 1201px) {
+  .row {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1101px) {

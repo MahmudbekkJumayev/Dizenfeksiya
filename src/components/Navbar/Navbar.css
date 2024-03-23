@@ -105,6 +105,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    cursor: pointer; /* Ko'rsatuvchi belgini qo'shish */
   }
 
   .nav-tab {
@@ -121,11 +122,18 @@
     top: 130px;
     right: 0px;
     width: 200px;
-    height: 100vh;
+    max-height: calc(
+      100vh - 130px
+    ); /* Ekranning qolgan bo'lagida joylashishi uchun */
+    overflow-y: auto; /* Agar menyu uzun bo'lsa, o'lchamlarini avtomatik ravishda o'zgartirish */
     background-color: hsl(0, 22%, 93%);
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+  }
+
+  .navigation.show {
+    display: flex; /* Menyuni ko'rsatish */
   }
 
   .navigation.active {
