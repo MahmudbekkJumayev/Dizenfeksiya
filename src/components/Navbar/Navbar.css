@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px 80px;
+  margin: 40px 90px;
 }
 
 .translation {
@@ -58,11 +58,11 @@
   margin: 0;
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
 .navigation ul li {
   color: #3360ff;
-  margin-right: 20px;
   font-size: 20px;
 }
 
@@ -101,7 +101,6 @@
 
 @media (max-width: 1000px) {
   .burger-menu {
-    margin-right: 10px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

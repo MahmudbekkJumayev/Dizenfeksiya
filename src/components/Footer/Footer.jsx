@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import contact from "../../assets/contact.png";
 import phone from "../../assets/phone1.png";
 import location from "../../assets/location1.png";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [modalOpen, setModalOpen] = useState(false); // Modal oynasini ochish/yopish holati
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,6 +18,7 @@ const Footer = () => {
       [name]: value,
     }));
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -27,12 +31,22 @@ const Footer = () => {
       );
       // Reset the formData state to empty values
       setFormData({ name: "", phone: "" });
-      alert("Ma'lumotlaringiz muvaffaqiyatli yuborildi!");
+      setModalOpen(true); // Modal oynasini ochish
     } catch (error) {
       console.error(error);
       alert("Xatolik yuz berdi. Qaytadan urinib ko'ring.");
     }
   };
+
+  useEffect(() => {
+    // Modal oynasini 10 sekunddan so'ng yopish
+    const timer = setTimeout(() => {
+      setModalOpen(false);
+    }, 10000);
+
+    // Effect tugab qolganida clearTimeout ishga tushirish
+    return () => clearTimeout(timer);
+  }, [modalOpen]); // Modal oynasining ochilish/yopilish holatiga bog'liq
 
   return (
     <div id="faq">
@@ -55,22 +69,28 @@ const Footer = () => {
               onChange={handleChange}
             />
             <button type="submit" className="forma-btn">
-              Yuborish
+              {t("send")}
             </button>
           </form>
         </div>
         <div className="connect-img">
-          <div data-aos="fade-right" className="connect-text">
-            <p>
-              Bizga ko'p yillardan beri kompaniyamizga ishonch bildirganlar
-              talaygina
-            </p>
-          </div>
           <div className="connect-img">
             <img src={contact} alt="#" />
           </div>
         </div>
       </div>
+      {modalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={() => setModalOpen(false)}>
+              &times;
+            </span>
+            <p className="modal-text">
+              Ma'lumotlaringiz muvaffaqiyatli yuborildi🎊🎊🎊🎊🎊
+            </p>
+          </div>
+        </div>
+      )}
       <div className="footer">
         <div className="footer-logo">
           <h4>Dizenfeksiya</h4>

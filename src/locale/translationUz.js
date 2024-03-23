@@ -22,6 +22,13 @@ const translationsUz = {
   acardion: "Zararkkunandalarni yo'q qilish qanday amalga oshiriladi?",
   acardionT:
     "Mahsus asbob uskunalar yordamida insektidsitlar aerozolli tumanga aylanadi va devor qog'ozi, devorlar va taxta plitalari orasidagi eng kichik bo'shliqlar, ko'zga ko'rinmas hashoratalar uchun potensial yashirish joylariga ga kiradi.",
+  acardion1: "Siz foydalanadigan dorilar xavflimi",
+  acardionT1:
+    "Dorilar odamlar, uy hayvonlari va o'simliklar uchun xavfli emas. Ammo davolashdan keyingi xonani 40 daqiqada ventilyatsiya qilish kerak.",
+  acardion2: "Menga uyimni bolalarga tayorlаnishning kandaydir usuli bormi?",
+  acardionT2:
+    "Asosan, iddish-tovot shahsiy gigienik vositalarni izolyatsiya qilish kerak. Davolash paytida uy hayvonlarini ham izolatsiya qilish kerak. Mebel yoki maishiy texnikalarni ko'chirishga hojat yuq",
+  send: "Yuborish",
 };
 
 export default translationsUz;

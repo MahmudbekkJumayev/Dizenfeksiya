@@ -26,6 +26,7 @@ function App() {
       <Navbar changeLang={changeLang} />
       <Header />
       <Main />
+
       <Footer />
     </div>
   );
