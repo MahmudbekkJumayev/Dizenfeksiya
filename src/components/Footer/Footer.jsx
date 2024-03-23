@@ -27,7 +27,7 @@ const Footer = () => {
       );
       // Reset the formData state to empty values
       setFormData({ name: "", phone: "" });
-      alert("Ma'lumotlar muvaffaqiyatli yuborildi!");
+      alert("Ma'lumotlaringiz muvaffaqiyatli yuborildi!");
     } catch (error) {
       console.error(error);
       alert("Xatolik yuz berdi. Qaytadan urinib ko'ring.");
