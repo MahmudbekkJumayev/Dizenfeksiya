@@ -20,8 +20,8 @@ const Header = () => {
               {t("connection")}
             </Button>
           </Col>
-          <Col>
-            <img className="head-img" src={imgHead} alt="imp" />
+          <Col className="head-img">
+            <img src={imgHead} alt="imp" />
           </Col>
         </Row>
       </Container>

@@ -22,12 +22,12 @@ function App() {
     i18n.changeLanguage(value);
   };
   return (
-    <>
+    <div className="app-container">
       <Navbar changeLang={changeLang} />
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 

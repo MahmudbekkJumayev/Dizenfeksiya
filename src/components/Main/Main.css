@@ -1,7 +1,3 @@
-.container2 {
-  margin: 100px 80px;
-}
-
 .cart-text {
   font-weight: 700;
   font-size: 40px;
@@ -69,6 +65,11 @@
   font-size: 18px;
   line-height: 150%;
   color: #fff;
+}
+
+.dizenfeksiya-card > img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .dizenfeksiya-card-item {
@@ -174,6 +175,7 @@
 
 .secruty-img > img {
   border-radius: 26px;
+  width: 95%;
 }
 
 .secruty-text > h4 {
@@ -258,147 +260,192 @@
   color: #676d83;
 }
 
-@media (max-width: 1300) {
-  .dizenfeksiya-card > img {
-    width: 1180px;
-  }
-}
-
 @media (max-width: 1201px) {
-  .dizenfeksiya-card > img {
-    width: 1120px;
-  }
-
-  .service-card-item {
-    width: 380px;
-    height: 400px;
-  }
-
-  .service-card-item > img {
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 240px;
-  }
-
-  .container2 {
-    margin: 50px 40px;
-  }
 }
 
-@media (max-width: 1099px) {
-  .dizenfeksiya-card > img {
-    width: 100%;
-  }
+@media (max-width: 1101px) {
+}
 
+@media (max-width: 1001px) {
   .dizenfeksiya-card-item > h4 {
-    font-size: 30px;
-  }
-
-  .secruty-img > img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
-
-  .comment-faq {
-    display: none;
-  }
-
-  .acardion-item {
-    margin-left: 100px;
-    width: 800px;
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 835px) {
-  .dizenfeksiya-card-item {
-    top: 50px;
-  }
-
-  .service-card {
-    display: grid;
-    flex-wrap: wrap;
-  }
-  .service-card-item {
-    margin-top: 20px;
-  }
-
-  .secruty-img {
-    display: none;
-  }
-
-  .acardion-item {
-    margin-left: 100px;
+    font-weight: 700;
+    font-size: 32px;
     width: 600px;
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-  }
-
-  .dizenfeksiya-card {
-    width: 740px;
-    height: 500px;
-    margin-top: 50px;
-  }
-
-  .dizenfeksiya-card > img {
-    height: 350px;
-    width: 300px;
-    object-fit: cover;
-  }
-
-  .dizenfeksiya-card-item > h4 {
-    width: 250px;
-    font-size: 26px;
-    top: 10px;
-    left: 10px;
+    line-height: 120%;
+    color: #fafafa;
   }
 
   .dizenfeksiya-card-item > p {
+    font-weight: 400;
+    margin-top: 15px;
     font-size: 18px;
-    width: 250px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .dizenfeksiya-card-item {
+    top: 100px;
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
   }
 
   .service-card-item {
-    background: #f3f6f6;
-    border-radius: 12px;
-    width: 303px;
-    height: 500px;
-  }
-
-  .service-card-item > p {
-    width: 200px;
+    width: 90%;
+    height: 380px;
   }
 
   .service-card-item > img {
     border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 190px;
+    margin-top: 50px;
+    margin-left: 690px;
   }
 
-  .secruty-text > h4 {
-    font-size: 20px;
-    width: 200px;
+  .service-card-item > p {
+    width: 600px;
   }
+}
 
-  .secruty {
-    height: 500px;
+@media (max-width: 901px) {
+  .acardion-item {
+    width: 900px;
+  }
+}
+
+@media (max-width: 801px) {
+  .service-card-item > img {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 590px;
   }
 
   .acardion-item {
-    width: 250px;
-    margin: 0;
+    width: 800px;
   }
 
-  .acardion-item > span > h4 {
-    margin-top: 20px;
-    font-size: 30px;
+  .secruty-text > h4 {
+    width: 400px;
+    font-weight: 700;
   }
+}
+
+@media (max-width: 701px) {
+  .acardion-item {
+    width: 700px;
+  }
+
+  .service-card-item > img {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 500px;
+  }
+
+  .service-card-item > p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 601px) {
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    font-weight: 700;
+    font-size: 22px;
+    width: 500px;
+    line-height: 120%;
+    color: #fafafa;
+  }
+
+  .dizenfeksiya-card-item > p {
+    font-weight: 400;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .dizenfeksiya-card-item {
+    top: 30px;
+    width: 400px;
+  }
+
+  .service-card-item > img {
+    margin-left: 400px;
+  }
+
+  .secruty-img > img {
+    display: none;
+  }
+
+  .acardion-item {
+    width: 600px;
+  }
+}
+
+@media (max-width: 501px) {
+  .card {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card-item {
+    margin-top: 40px;
+  }
+
+  .acardion-item {
+    width: 500px;
+  }
+
+  .service-card-item > img {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+
+  .service-card-item > p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 401px) {
+  .dizenfeksiya-card-item {
+    top: 30px;
+    width: 200px;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    font-weight: 700;
+    font-size: 22px;
+    width: 200px;
+    line-height: 120%;
+    color: #fafafa;
+  }
+
+  .dizenfeksiya-card > img {
+    height: 300px;
+  }
+  .service-card-item > img {
+    margin-left: 200px;
+  }
+
+  .service-card-item > p {
+    width: 250px;
+  }
+
+  .service-card-item {
+    height: 470px;
+  }
+
+  .acardion-item {
+    width: 400px;
+  }
+}
+
+@media (max-width: 320px) {
 }
