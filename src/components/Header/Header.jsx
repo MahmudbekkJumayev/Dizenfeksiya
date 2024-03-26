@@ -11,7 +11,9 @@ const Header = () => {
         <div className="header-text" data-aos="fade-right">
           <h2>{t("dizen")}</h2>
           <p>{t("head")}</p>
-          <button>{t("connection")}</button>
+          <button onClick={() => (window.location.href = "#faq")}>
+            {t("connection")}
+          </button>
         </div>
         <div className="header-img">
           <img src={imgHead} alt="imghead" />
