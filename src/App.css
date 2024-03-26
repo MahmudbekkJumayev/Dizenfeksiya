@@ -1,5 +1,6 @@
 .app-container {
   margin: 40px 80px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

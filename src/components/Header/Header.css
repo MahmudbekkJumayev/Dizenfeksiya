@@ -208,11 +208,15 @@
 }
 
 @media (max-width: 401px) {
+  .header-text > h2 {
+    width: 350px;
+    font-size: 37px;
+  }
 }
 
 @media (max-width: 351px) {
   .header-text > h2 {
-    width: 300px;
+    width: 350px;
     font-size: 37px;
   }
 }
