@@ -104,22 +104,20 @@
     flex-direction: column;
     cursor: pointer;
     position: fixed;
-    /top: 20px;
-    right: 5px; /* O'ng tarafga joylashtirish */
-    z-index: 1100; /* Yuqori z-index ni belgilash */
+    top: 28px;
+    right: 5px;
+    z-index: 1100;
   }
 
   .navigation {
-    position: fixed; /* Menyu qismi to'g'ri joylashgan ekan */
-    top: 0; /* Yuqori qismga joylashish */
-    right: 0; /* O'ng tarafga joylashish */
-    width: 250px; /* Menyuning o'lchami */
-    height: 100%; /* Ekran balandligida */
-    background-color: #fff; /* Menyu fon rangi */
-    box-shadow: -1px 0 7px rgba(0, 0, 0, 0.1); /* O'ng tarafga kengaytirilgan sozlamalar */
-    transform: translateX(
-      100%
-    ); /* Boshlang'ich tarzda ekran qismi yonida yashirilgan */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -1px 0 7px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
