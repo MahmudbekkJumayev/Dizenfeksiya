@@ -491,9 +491,13 @@
 
 @media (max-width: 351px) {
   .card-item {
-    width: 330px;
+    width: 310px;
     height: 200px;
     padding: 10px;
+  }
+
+  .card-item > p {
+    width: 280px;
   }
 
   .dizenfeksiya-card-item > h4 {
@@ -504,5 +508,11 @@
   .service-card-item > img {
     margin-left: 200px;
     top: 2px;
+  }
+}
+
+@media (max-width: 321px) {
+  .service-card-item > p {
+    width: 230px;
   }
 }

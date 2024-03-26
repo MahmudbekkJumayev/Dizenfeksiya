@@ -100,70 +100,44 @@
 
 @media (max-width: 1000px) {
   .burger-menu {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer; /* Ko'rsatuvchi belgini qo'shish */
-  }
-
-  .nav-tab {
-    margin-top: 20px;
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navigation {
-    border-radius: 10px;
-    display: none;
-    position: absolute;
-    top: 130px;
-    right: 0px;
-    width: 200px;
-    max-height: calc(
-      100vh - 130px
-    ); /* Ekranning qolgan bo'lagida joylashishi uchun */
-    overflow-y: auto; /* Agar menyu uzun bo'lsa, o'lchamlarini avtomatik ravishda o'zgartirish */
-    background-color: hsl(0, 22%, 93%);
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  .navigation.show {
-    display: flex; /* Menyuni ko'rsatish */
-  }
-
-  .navigation.active {
-    display: flex;
-  }
-  /* Add this CSS to your existing Navbar.css file */
-
-  .burger-menu {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: fixed; /* Menu tugmasini ekranning yuqori qismida joylashtirish */
+    top: 20px; /* Yuqori bo'lsa, pastga yo'naltirish */
+    right: 5px; /* O'ng tarafga joylashtirish */
+    z-index: 1100; /* Yuqori z-index ni belgilash */
   }
 
-  .line {
-    width: 30px;
-    height: 2px;
-    background-color: #000;
-    margin: 4px;
-    transition: all 0.3s ease-in-out;
+  .navigation {
+    position: fixed; /* Menyu qismi to'g'ri joylashgan ekan */
+    top: 0; /* Yuqori qismga joylashish */
+    right: 0; /* O'ng tarafga joylashish */
+    width: 250px; /* Menyuning o'lchami */
+    height: 100%; /* Ekran balandligida */
+    background-color: #fff; /* Menyu fon rangi */
+    box-shadow: -1px 0 7px rgba(0, 0, 0, 0.1); /* O'ng tarafga kengaytirilgan sozlamalar */
+    transform: translateX(
+      100%
+    ); /* Boshlang'ich tarzda ekran qismi yonida yashirilgan */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Styling for active burger menu */
-  .line.active:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+  .nav-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 
-  .line.active:nth-child(2) {
-    opacity: 0;
+  .navigation.active {
+    transform: translateX(0); /* Menyu ochiladi */
   }
 
-  .line.active:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+  .navigation ul {
+    padding: 20px; /* Menyuning ichki qismi orqali (yo'l, qiyofa, past bo'lish) */
   }
 }
 

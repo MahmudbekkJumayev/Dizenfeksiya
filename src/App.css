@@ -13,3 +13,9 @@
     margin: 10px 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .app-container {
+    margin: 5px 10px;
+  }
+}
