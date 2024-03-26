@@ -103,8 +103,8 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    position: fixed; /* Menu tugmasini ekranning yuqori qismida joylashtirish */
-    top: 20px; /* Yuqori bo'lsa, pastga yo'naltirish */
+    position: fixed;
+    /top: 20px;
     right: 5px; /* O'ng tarafga joylashtirish */
     z-index: 1100; /* Yuqori z-index ni belgilash */
   }

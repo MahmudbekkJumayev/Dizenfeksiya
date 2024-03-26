@@ -40,7 +40,7 @@ const Footer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setModalOpen(false);
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [modalOpen]);
@@ -82,9 +82,7 @@ const Footer = () => {
             <span className="close" onClick={() => setModalOpen(false)}>
               &times;
             </span>
-            <p className="modal-text">
-              Ma'lumotlaringiz muvaffaqiyatli yuborildi🎊🎊🎊🎊🎊
-            </p>
+            <p className="modal-text">Ma'lumotlaringiz yuborildi🎊</p>
           </div>
         </div>
       )}

@@ -135,7 +135,6 @@
   background: #4898cd;
   color: #fff;
 }
-
 .modal {
   position: fixed;
   z-index: 9999;
@@ -145,22 +144,26 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Modalni o'rtasida joylash */
+  align-items: center; /* Modalni o'rtasida joylash */
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 0 auto; /* Marginni o'zgartirib oling */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
-  height: 250px;
+  max-width: 80%; /* Modalning maksimal kengligini o'zgartirib oling */
+  max-height: 80%; /* Modalning maksimal balandligini o'zgartirib oling */
+  overflow: auto; /* Agar modal o'lchamdan kattaroq bo'lsa, skrollarni qo'shing */
   border-radius: 10px;
 }
 
 .modal-text {
-  font-size: 35px;
-  color: #a23726;
+  font-size: 25px;
+  color: #186bdf;
 }
 
 .close {
@@ -330,7 +333,7 @@
   }
 }
 
-@media (max-width: 351px) {
+@media (max-width: 380px) {
   .form > input {
     width: 270px;
   }

@@ -437,7 +437,11 @@
   .card {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 50px;
+  }
+
+  .acardion-item > span > h4 {
+    font-size: 28px;
   }
 
   .card-item {
@@ -470,8 +474,7 @@
   }
 
   .service-card-item > img {
-    margin-left: 260px;
-    top: 2px;
+    display: none;
   }
 
   .service-card-item > p {
@@ -489,6 +492,15 @@
 @media (max-width: 401px) {
   .card-item > p {
     width: 280px;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    width: 300px;
+    font-size: 29px;
+  }
+
+  .dizenfeksiya-card-item {
+    left: 10px;
   }
 
   .card-item > h4 {
