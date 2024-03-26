@@ -15,6 +15,8 @@ const translationsUz = {
   klapa: "Klapa va zararli hashoratlar endi yo'q dep hisoblang!!!",
   lesson: "Bu darsliklari sizning yuqori daraja olishingizga yordam beradi",
   basic: "Boshlang’ich tushunchalar",
+  basic2: "O'rta tushunchalar",
+  basic3: "Yuqori tushunchalar",
   basicT:
     "Dezinfektsiya - yuqumli kasalliklar qo'zg'atuvchilarini yo'q qilish va ularning teriga, shilliq pardalarga va yara yuzasiga tushishini oldini olish uchun atrof-muhit ob'ektlarida toksinlarni yo'q qilishga qaratilgan chora-tadbirlar majmui. Bu dezinfeksiya turlaridan biridir",
   trusr:
@@ -29,6 +31,8 @@ const translationsUz = {
   acardionT2:
     "Asosan, iddish-tovot shahsiy gigienik vositalarni izolyatsiya qilish kerak. Davolash paytida uy hayvonlarini ham izolatsiya qilish kerak. Mebel yoki maishiy texnikalarni ko'chirishga hojat yuq",
   send: "Yuborish",
+  basicT2:
+    "Toshkentda deratizatsya kemiruvchilarni yo'q qilishga qaratilgan kompleks chora-tadbirlarning butun majmuasidir. Maulukki, kemiruvchilar juda ⱨattiⱨ zhonzotlar bo'lib, ular turli tizma havfli taisirlarga dosh beradilar. Shu uchun ularni yo'q qilish uchun bir qator usullardan foydalanish kerak.",
 };
 
 export default translationsUz;

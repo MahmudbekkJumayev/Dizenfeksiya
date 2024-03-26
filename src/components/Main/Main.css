@@ -392,17 +392,18 @@
 }
 
 @media (max-width: 701px) {
-  .card {
-    display: grid;
-    grid-template-columns: auto;
-  }
-
   .service-card-item > img {
     margin-left: 400px;
   }
 
   .secruty-img {
     display: none;
+  }
+
+  .card-item {
+    width: 244px;
+    height: 200px;
+    padding: 10px;
   }
 }
 
@@ -415,22 +416,93 @@
   .service-card-item > p {
     width: 350px;
   }
+
+  .dizenfeksiya-card-item > h4 {
+    width: 400px;
+  }
 }
 
 @media (max-width: 601px) {
+  .dizenfeksiya-card-item > h4 {
+    width: 370px;
+  }
+
+  .service-card-item > img {
+    margin-top: 20px;
+    margin-left: 320px;
+  }
 }
 
 @media (max-width: 551px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .card-item {
+    width: 404px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    width: 340px;
+  }
+
+  .dizenfeksiya-card > img {
+    object-fit: cover;
+  }
+
+  .service-card-item > img {
+    margin-top: 20px;
+    margin-left: 290px;
+  }
+
+  .service-card-item > p {
+    width: 300px;
+  }
 }
 
 @media (max-width: 501px) {
+  .dizenfeksiya-card-item > h4 {
+    width: 340px;
+  }
+
+  .service-card-item > img {
+    margin-left: 260px;
+    top: 2px;
+  }
+
+  .service-card-item > p {
+    width: 270px;
+  }
 }
 
 @media (max-width: 451px) {
+  .dizenfeksiya-card-item > h4 {
+    width: 320px;
+    font-size: 29px;
+  }
 }
 
 @media (max-width: 401px) {
 }
 
 @media (max-width: 351px) {
+  .card-item {
+    width: 330px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .dizenfeksiya-card-item > h4 {
+    width: 200px;
+    font-size: 25px;
+  }
+
+  .service-card-item > img {
+    margin-left: 200px;
+    top: 2px;
+  }
 }

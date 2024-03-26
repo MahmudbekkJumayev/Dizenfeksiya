@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
 
@@ -8,9 +8,27 @@ const Navbar = ({ changeLang }) => {
     console.log(e.target.value);
     changeLang(e.target.value);
   };
+
   const [showMenu, setShowMenu] = useState(false);
 
-  const toggleMenu = () => {
+  useEffect(() => {
+    const closeMenu = () => {
+      setShowMenu(false);
+    };
+
+    if (showMenu) {
+      document.addEventListener("click", closeMenu);
+    } else {
+      document.removeEventListener("click", closeMenu);
+    }
+
+    return () => {
+      document.removeEventListener("click", closeMenu);
+    };
+  }, [showMenu]);
+
+  const toggleMenu = (e) => {
+    e.stopPropagation();
     setShowMenu(!showMenu);
   };
 

@@ -212,7 +212,7 @@
 }
 
 @media (max-width: 1051px) {
-  .form > input {
+  /* .form > input {
     border: 1px solid black;
     border-radius: 8px;
     width: 308px;
@@ -239,7 +239,7 @@
   .forma-btn {
     width: 308px;
     height: 38px;
-  }
+  } */
 }
 
 @media (max-width: 1001px) {
@@ -252,11 +252,6 @@
 }
 
 @media (max-width: 901px) {
-  .forma {
-    width: 380px;
-    height: 280px;
-    margin-left: 20px;
-  }
 }
 
 @media (max-width: 851px) {
@@ -281,13 +276,77 @@
 }
 
 @media (max-width: 501px) {
+  .form > input {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 308px;
+    height: 38px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .forma > h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #242825;
+    margin: auto;
+  }
+
+  .forma {
+    width: 360px;
+    height: 304px;
+    margin-left: 20px;
+  }
+
+  .forma-btn {
+    width: 308px;
+    height: 38px;
+  }
 }
 
 @media (max-width: 451px) {
 }
 
 @media (max-width: 401px) {
+  .form > input {
+    width: 290px;
+  }
+
+  .forma > h2 {
+    font-size: 28px;
+  }
+
+  .forma {
+    width: 340px;
+    height: 304px;
+    margin-left: 10px;
+  }
+
+  .forma-btn {
+    width: 290px;
+    height: 38px;
+  }
 }
 
 @media (max-width: 351px) {
+  .form > input {
+    width: 270px;
+  }
+
+  .forma > h2 {
+    font-size: 24px;
+  }
+
+  .forma {
+    width: 310px;
+    height: 304px;
+    margin-left: 3px;
+  }
+
+  .forma-btn {
+    width: 270px;
+    height: 38px;
+  }
 }

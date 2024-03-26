@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <div className="header">
-        <div className="header-text">
+        <div className="header-text" data-aos="fade-right">
           <h2>{t("dizen")}</h2>
           <p>{t("head")}</p>
           <button>{t("connection")}</button>

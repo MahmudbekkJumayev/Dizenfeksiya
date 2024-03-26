@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: "", phone: "" });
-  const [modalOpen, setModalOpen] = useState(false); // Modal oynasini ochish/yopish holati
+  const [modalOpen, setModalOpen] = useState(false);
   const { t } = useTranslation();
 
   const handleChange = (e) => {
@@ -23,15 +23,14 @@ const Footer = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://api.telegram.org/bot7134895187:AAGXztQoWmiNoOOUlBoct2D4QuMbTkPhnjc/sendMessage",
+        "https://api.telegram.org/bot6428568310:AAFJNsB2heebFvp9YG63NypKzk12U_x7KI0/sendMessage",
         {
-          chat_id: "-1002122412259",
+          chat_id: "-1002085422187",
           text: `Ism: ${formData.name}\nTelefon: ${formData.phone}`,
         }
       );
-      // Reset the formData state to empty values
       setFormData({ name: "", phone: "" });
-      setModalOpen(true); // Modal oynasini ochish
+      setModalOpen(true);
     } catch (error) {
       console.error(error);
       alert("Xatolik yuz berdi. Qaytadan urinib ko'ring.");
@@ -39,14 +38,12 @@ const Footer = () => {
   };
 
   useEffect(() => {
-    // Modal oynasini 10 sekunddan so'ng yopish
     const timer = setTimeout(() => {
       setModalOpen(false);
     }, 10000);
 
-    // Effect tugab qolganida clearTimeout ishga tushirish
     return () => clearTimeout(timer);
-  }, [modalOpen]); // Modal oynasining ochilish/yopilish holatiga bog'liq
+  }, [modalOpen]);
 
   return (
     <div id="faq">
@@ -73,7 +70,7 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div className="connect-img">
+        <div className="connect-img" data-aos="fade-right">
           <div className="connect-img">
             <img src={contact} alt="#" />
           </div>
@@ -91,11 +88,11 @@ const Footer = () => {
           </div>
         </div>
       )}
-      <div className="footer">
+      <div className="footer" data-aos="fade-right">
         <div className="footer-logo">
           <h4>Dizenfeksiya</h4>
         </div>
-        <div className="footer-contact" data-aos="fade-left">
+        <div className="footer-contact">
           <div className="location">
             <span>
               <img src={location} alt="#" />

@@ -1,3 +1,15 @@
 .app-container {
   margin: 40px 80px;
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    margin: 20px 40px;
+  }
+}
+
+@media (max-width: 451px) {
+  .app-container {
+    margin: 10px 20px;
+  }
+}

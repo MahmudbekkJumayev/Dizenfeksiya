@@ -65,7 +65,7 @@ const Main = () => {
       {/* mein qismi */}
       <div className="dizenfeksiya-card">
         <img src={dizen} alt="#" />
-        <div className="dizenfeksiya-card-item" data-aos="fade-left">
+        <div className="dizenfeksiya-card-item" data-aos="fade-right">
           <h4>{t("klapa")}</h4>
           <p>{t("ourT4")}</p>
           <button
@@ -77,25 +77,25 @@ const Main = () => {
         </div>
       </div>
       {/* servises */}
-      <div id="servis" className="servise" data-aos="fade-up-right">
-        <h4>Service</h4>
-        <p>{t("lesson")}</p>
+      <div id="servis" className="servise">
+        <h4 data-aos="fade-right">Service</h4>
+        <p data-aos="fade-right">{t("lesson")}</p>
         <div className="service-card">
-          <div className="service-card-item">
+          <div className="service-card-item" data-aos="fade-right">
             <h4>{t("basic")}</h4>
             <p>{t("basicT")}</p>
 
             <img src={group} alt="#" />
           </div>
-          <div className="service-card-item">
-            <h4> {t("basic")}</h4>
-            <p>{t("basicT")}</p>
+          <div className="service-card-item" data-aos="fade-right">
+            <h4> {t("basic2")}</h4>
+            <p>{t("basicT2")}</p>
 
             <img src={slack2} alt="#" />
           </div>
-          <div className="service-card-item">
-            <h4> {t("basic")}</h4>
-            <p>{t("basicT")}</p>
+          <div className="service-card-item" data-aos="fade-right">
+            <h4> {t("basic3")}</h4>
+            <p>{t("basicT2")}</p>
 
             <img src={slack3} alt="#" />
           </div>
@@ -103,10 +103,10 @@ const Main = () => {
       </div>
       {/* secruty */}
       <div className="secruty">
-        <div className="secruty-img" data-aos="fade-up-left">
+        <div className="secruty-img" data-aos="fade-right">
           <img src={secruty} alt="#" />
         </div>
-        <div className="secruty-text" data-aos="fade-up-left">
+        <div className="secruty-text" data-aos="fade-right">
           <img src={dicons} alt="#" />
           <h4>{t("trust")}</h4>
           <button
@@ -119,10 +119,10 @@ const Main = () => {
       </div>
       {/* comment */}
       <div className="comment">
-        <div className="comment-faq">
+        <div className="comment-faq" data-aos="fade-right">
           <h4>FAQ</h4>
         </div>
-        <div className="acardion">
+        <div className="acardion" data-aos="fade-right">
           {[0].map((index) => (
             <div className="acardion-item" key={index}>
               <span onClick={() => toggleAccordion(index)}>

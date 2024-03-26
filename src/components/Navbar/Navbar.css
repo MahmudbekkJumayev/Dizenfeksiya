@@ -1,4 +1,3 @@
-/* Navbar.css */
 .container {
   display: flex;
   align-items: center;
@@ -137,6 +136,34 @@
 
   .navigation.active {
     display: flex;
+  }
+  /* Add this CSS to your existing Navbar.css file */
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Styling for active burger menu */
+  .line.active:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .line.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.active:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
